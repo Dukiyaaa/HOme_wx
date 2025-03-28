@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="section">
+    <textarea placeholder="请输入你的问题" bindinput="onInput" value="{{inputText}}" class="input-area" />
+    <button bindtap="sendMessage" type="primary" loading="{{loading}}">发送</button>
+  </view>
+
+  <view class="section">
+    <text class="reply-label">AI 回复：</text>
+    <text class="reply-text">{{replyText}}</text>
+  </view>
+</view>

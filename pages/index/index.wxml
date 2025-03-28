@@ -1,0 +1,9 @@
+<view class="container">
+  <image src="{{imageBase64}}" mode="widthFix" style="width: 100%; height: auto;" />
+  <view class="debug"><text>{{debugText}}</text></view>
+  <button bindtap="captureHD">📸 点击识别开门</button>
+</view>
+<view class="container">
+  <button bindtap="goToAI">点我打开 AI 助手</button>
+</view>
+

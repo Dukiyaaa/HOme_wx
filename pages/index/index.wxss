@@ -1,0 +1,10 @@
+
+.container {
+  padding: 20rpx;
+}
+
+.debug {
+  color: #999;
+  font-size: 24rpx;
+  padding: 16rpx;
+}

@@ -1,0 +1,17 @@
+
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ai-assistant/ai-assistant"
+  ],  
+  "window": {
+    "navigationBarTitleText": "ESP32 优化版"
+  },
+
+  "permission": {
+    "scope.writePhotosAlbum": {
+      "desc": "用于保存拍摄的高清图像到相册"
+    }
+  }
+  
+}
