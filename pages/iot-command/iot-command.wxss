@@ -1,0 +1,6 @@
+.container {
+  padding: 30rpx;
+}
+.section {
+  margin-top: 30rpx;
+}

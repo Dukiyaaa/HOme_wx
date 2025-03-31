@@ -1,11 +1,27 @@
 <view class="container">
-  <view class="section">
-    <textarea placeholder="请输入你的问题" bindinput="onInput" value="{{inputText}}" class="input-area" />
-    <button bindtap="sendMessage" type="primary" loading="{{loading}}">发送</button>
-  </view>
+  <!-- 内容滚动区域 -->
+  <scroll-view scroll-y class="scroll-area">
+    <view class="section">
+      <textarea 
+        placeholder="请输入你的问题"
+        bindinput="onInput"
+        value="{{inputText}}"
+        class="input-area"
+        auto-height="true"
+        maxlength="-1">
+      </textarea>
+    </view>
 
-  <view class="section">
-    <text class="reply-label">AI 回复：</text>
-    <text class="reply-text">{{replyText}}</text>
+    <view class="section">
+      <text class="reply-label">AI 回复：</text>
+      <view class="reply-box">
+        <rich-text nodes="{{replyNodes}}" />
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 固定底部按钮 -->
+  <view class="bottom-bar">
+    <button bindtap="sendMessage" type="primary" loading="{{loading}}">发送</button>
   </view>
 </view>

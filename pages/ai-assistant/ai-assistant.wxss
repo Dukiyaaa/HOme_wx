@@ -1,22 +1,51 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 占满屏幕 */
+}
+
+.scroll-area {
+  flex: 1;
+  overflow: hidden;
   padding: 30rpx;
 }
+
 .section {
   margin-bottom: 40rpx;
 }
+
 .input-area {
   width: 100%;
-  height: 200rpx;
-  padding: 20rpx;
-  border: 1px solid #ccc;
-  border-radius: 10rpx;
-  margin-bottom: 20rpx;
+  min-height: 150px;
+  max-height: 500px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow-y: auto;
 }
+
+.bottom-bar {
+  padding: 20rpx 30rpx;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+
 .reply-label {
   font-weight: bold;
 }
-.reply-text {
-  display: block;
-  margin-top: 10rpx;
+.reply-box {
+  background-color: #f7f7f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16rpx;
+  font-size: 15px;
   color: #333;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
+

@@ -6,4 +6,5 @@
 <view class="container">
   <button bindtap="goToAI">点我打开 AI 助手</button>
 </view>
-
+<!-- 新增按钮：跳转到命令下发页面 -->
+<button bindtap="goToIotCommand" type="default" style="margin-top: 30rpx;">跳转到命令下发</button>

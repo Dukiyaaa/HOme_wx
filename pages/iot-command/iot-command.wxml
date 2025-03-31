@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="section">
+    <input placeholder="请输入窗帘开合百分比" type="number" bindinput="onInput" value="{{percent}}" />
+    <button type="primary" loading="{{loading}}" bindtap="sendCommand">发送命令</button>
+  </view>
+
+  <view class="section">
+    <text>响应结果：</text>
+    <text>{{responseText}}</text>
+  </view>
+</view>

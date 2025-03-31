@@ -112,5 +112,12 @@ Page({
     wx.navigateTo({
       url: '/pages/ai-assistant/ai-assistant'
     });
+  },
+
+  goToIotCommand() {
+    wx.navigateTo({
+      url: '/pages/iot-command/iot-command',
+    });
   }
+  
 })

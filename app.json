@@ -2,8 +2,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/ai-assistant/ai-assistant"
-  ],  
+    "pages/ai-assistant/ai-assistant",
+    "pages/iot-command/iot-command"
+  ],
+  
   "window": {
     "navigationBarTitleText": "ESP32 优化版"
   },
